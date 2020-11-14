@@ -1,0 +1,295 @@
+<style type="text/css">
+body {
+  background-color: #282828;
+  color: #cfcfcf;
+  max-width: 800px;
+  min-width: 700px;
+}
+
+#header {
+  padding: 16px 32px;
+  text-align: center;
+  margin-bottom: 24px;
+  color: #FFF;
+  background-color: #000;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+#header * {
+  font-family: Arial, sans-serif;
+  font-weight: normal;
+}
+
+#header h1 {
+  font-size: 48px;
+  font-weight: lighter;
+}
+
+table {
+  background-color: #444444;
+  width: 100%;
+}
+
+.tg {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.tg td {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  padding: 10px 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #282828;
+  overflow: hidden;
+  word-break: normal;
+}
+
+.tg th {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  padding: 10px 5px;
+  border-style: solid;
+  border-width: 1px;
+  overflow: hidden;
+  word-break: normal;
+}
+
+.tg .tg-rkwu {
+  font-family: "Courier New", Courier, monospace !important;
+}
+
+.tg .tg-rkwu:last-of-type, .tg .tg-r5us {
+  text-align: center;
+  font-weight: bold;
+  color: #FFF;
+}
+
+.tg .tg-lmxi:first-of-type {
+  border-top-left-radius: 8px;
+  border-right: 1px solid #050;
+}
+
+.tg .tg-lmxi {
+  font-weight: bold;
+  background-color: #039e5c;
+  color: #ffffff;
+  min-width: 200px;
+  border: none;
+}
+
+.tg .tg-lmxi:last-of-type {
+  border-top-right-radius: 8px;
+  border-left: 1px solid #050;
+}
+
+th.tg-sort-header::-moz-selection {
+  background: transparent;
+}
+
+th.tg-sort-header::selection {
+  background: transparent;
+}
+
+th.tg-sort-header {
+  cursor: pointer;
+}
+
+table th.tg-sort-header:after {
+  content: '';
+  float: right;
+  margin-top: 7px;
+  border-width: 0 4px 4px;
+  border-style: solid;
+  border-color: #404040 transparent;
+  visibility: hidden;
+}
+
+table th.tg-sort-header:hover:after {
+  visibility: visible;
+}
+
+table th.tg-sort-desc:after,
+table th.tg-sort-asc:after,
+table th.tg-sort-asc:hover:after {
+  visibility: visible;
+  opacity: 0.4;
+}
+
+table th.tg-sort-desc:after {
+  border-bottom: none;
+  border-width: 4px 4px 0;
+}
+
+.footer {
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  font-family: sans-serif;
+  background-color: #039E5C;
+  color: #000;
+  padding: 4px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  margin-bottom: 32px;
+}
+</style>
+<div id="header">
+  <h1>VNgen Console Commands:</h1>
+  <h4>(Commands are case-sensitive)</h4>
+</div>
+<table id="tg-wj3Vi" class="tg">
+  <tr>
+    <th class="tg-lmxi">Command:</th>
+    <th class="tg-lmxi">Description:</th>
+    <th class="tg-lmxi">Notes:</th>
+  </tr>
+  <tr>
+    <td class="tg-rkwu">exit</td>
+    <td class="tg-rkwu">Close the console</td>
+    <td class="tg-rkwu"></td>
+  </tr>
+  <tr>
+    <td class="tg-rkwu">help</td>
+    <td class="tg-rkwu">Display this dialog</td>
+    <td class="tg-rkwu"></td>
+  </tr>
+  <tr>
+    <td class="tg-rkwu">game_end()</td>
+    <td class="tg-rkwu">Exits the game</td>
+    <td class="tg-rkwu"></td>
+  </tr>
+  <tr>
+    <td class="tg-rkwu">game_restart()</td>
+    <td class="tg-rkwu">Restart the game</td>
+    <td class="tg-rkwu"></td>
+  </tr>
+  <tr>
+    <td class="tg-rkwu">room_goto(room)</td>
+    <td class="tg-rkwu">Jump to a specific room</td>
+    <td class="tg-rkwu">(Same as vngen_room_goto)</td>
+  </tr>
+  <tr>
+    <td class="tg-rkwu">show_debug_helpers(true/false)</td>
+    <td class="tg-rkwu">Enable or disable wireframe overlays</td>
+    <td class="tg-rkwu">Affects performance!</td>
+  </tr>
+  <tr>
+    <td class="tg-rkwu">show_debug_overlay(true/false)</td>
+    <td class="tg-rkwu">Enable or disable live performance info</td>
+    <td class="tg-rkwu"></td>
+  </tr>
+  <tr>
+    <td class="tg-rkwu">show_debug_stats(true/false)</td>
+    <td class="tg-rkwu">Enable or disable live engine info</td>
+    <td class="tg-rkwu">Affects performance!</td>
+  </tr>
+  <tr>
+    <td class="tg-rkwu">vngen_file_save(filename, [encrypt])</td>
+    <td class="tg-rkwu">Save VNgen data to a file</td>
+    <td class="tg-rkwu"></td>
+  </tr>
+  <tr>
+    <td class="tg-rkwu">vngen_file_load(filename)</td>
+    <td class="tg-rkwu">Load previously saved VNgen data</td>
+    <td class="tg-rkwu"></td>
+  </tr>
+  <tr>
+    <td class="tg-rkwu">vngen_file_delete(filename)</td>
+    <td class="tg-rkwu">Delete previously saved VNgen data</td>
+    <td class="tg-rkwu"></td>
+  </tr>
+  <tr>
+    <td class="tg-rkwu">vngen_goto(event, [object, perform])</td>
+    <td class="tg-rkwu">Jump to a specific engine event</td>
+    <td class="tg-rkwu"></td>
+  </tr>
+  <tr>
+    <td class="tg-rkwu">vngen_goto_unread([perform])</td>
+    <td class="tg-rkwu">Jump to the nearest option or unread event</td>
+    <td class="tg-rkwu"></td>
+  </tr>
+  <tr>
+    <td class="tg-rkwu">vngen_log_clear([destroy])</td>
+    <td class="tg-rkwu">Clear the backlog and optionally destroy the log object</td>
+    <td class="tg-rkwu"></td>
+  </tr>
+  <tr>
+    <td class="tg-rkwu">vngen_room_goto(room, [event, object], [perform])</td>
+    <td class="tg-rkwu">Jump to a specific room and optional event</td>
+    <td class="tg-rkwu"></td>
+  </tr>
+  <tr>
+    <td class="tg-rkwu">vngen_set_lang(lang, [type])</td>
+    <td class="tg-rkwu">Set the active language flag for text, audio, or both</td>
+    <td class="tg-rkwu"></td>
+  </tr>
+  <tr>
+    <td class="tg-rkwu">vngen_get_lang(type)</td>
+    <td class="tg-rkwu">Display the active language flag for text or audio</td>
+    <td class="tg-rkwu"></td>
+  </tr>
+  <tr>
+    <td class="tg-rkwu">vngen_set_renderlevel(level)</td>
+    <td class="tg-rkwu">Set renderlevel, where 0 is default</td>
+    <td class="tg-rkwu"></td>
+  </tr>
+  <tr>
+    <td class="tg-rkwu">vngen_set_scale(view)</td>
+    <td class="tg-rkwu">Set a viewport to scale to window dimensions</td>
+    <td class="tg-rkwu"></td>
+  </tr>
+  <tr>
+    <td class="tg-rkwu">vngen_set_speed(speed)</td>
+    <td class="tg-rkwu">Set the text typewriter effect speed</td>
+    <td class="tg-rkwu"></td>
+  </tr>
+  <tr>
+    <td class="tg-rkwu">vngen_set_vol(type, vol, [fade])</td>
+    <td class="tg-rkwu">Set the global volume offset for a particular type of sound</td>
+    <td class="tg-rkwu">Use keyword 'all' for all types</td>
+  </tr>
+  <tr>
+    <td class="tg-rkwu">vngen_version()</td>
+    <td class="tg-rkwu">Display the current VNgen version and build date</td>
+    <td class="tg-rkwu"></td>
+  </tr>
+  <tr>
+    <td class="tg-rkwu">window_set_fullscreen(full)</td>
+    <td class="tg-rkwu">Set window display mode</td>
+    <td class="tg-rkwu"></td>
+  </tr>
+</table>
+<div class="footer">&nbsp;</div>
+<table id="tg-wj3Vx" class="tg">
+  <tr>
+    <th class="tg-lmxi">Additional Controls:</th>
+    <th class="tg-lmxi">Description:</th>
+    <th class="tg-lmxi">Notes:</th>
+  </tr>
+  <tr>
+    <td class="tg-rkwu">up arrow</td>
+    <td class="tg-rkwu">Previous command</td>
+    <td class="tg-rkwu">Max 32 stored commands</td>
+  </tr>
+  <tr>
+    <td class="tg-rkwu">down arrow</td>
+    <td class="tg-rkwu">Next command</td>
+    <td class="tg-rkwu">Max 32 stored commands</td>
+  </tr>
+  <tr>
+    <td class="tg-rkwu">enter</td>
+    <td class="tg-rkwu">Execute command</td>
+    <td class="tg-rkwu"></td>
+  </tr>
+  <tr>
+    <td class="tg-rkwu">escape</td>
+    <td class="tg-rkwu">Close console</td>
+    <td class="tg-rkwu"></td>
+  </tr>
+</table>
+<div class="footer">VNgen, &copy; XGASOFT, All Rights Reserved. GameMaker: Studio, GameMaker Studio 2, &copy; YoYo Games, All Rights Reserved.</div>
+<script type="text/javascript" charset="utf-8">var TgTableSort=window.TgTableSort||function(n,t){"use strict";function r(n,t){for(var e=[],o=n.childNodes,i=0;i<o.length;++i){var u=o[i];if("."==t.substring(0,1)){var a=t.substring(1);f(u,a)&&e.push(u)}else u.nodeName.toLowerCase()==t&&e.push(u);var c=r(u,t);e=e.concat(c)}return e}function e(n,t){var e=[],o=r(n,"tr");return o.forEach(function(n){var o=r(n,"td");t>=0&&t<o.length&&e.push(o[t])}),e}function o(n){return n.textContent||n.innerText||""}function i(n){return n.innerHTML||""}function u(n,t){var r=e(n,t);return r.map(o)}function a(n,t){var r=e(n,t);return r.map(i)}function c(n){var t=n.className||"";return t.match(/\S+/g)||[]}function f(n,t){return-1!=c(n).indexOf(t)}function s(n,t){f(n,t)||(n.className+=" "+t)}function d(n,t){if(f(n,t)){var r=c(n),e=r.indexOf(t);r.splice(e,1),n.className=r.join(" ")}}function v(n){d(n,L),d(n,E)}function l(n,t,e){r(n,"."+E).map(v),r(n,"."+L).map(v),e==T?s(t,E):s(t,L)}function g(n){return function(t,r){var e=n*t.str.localeCompare(r.str);return 0==e&&(e=t.index-r.index),e}}function h(n){return function(t,r){var e=+t.str,o=+r.str;return e==o?t.index-r.index:n*(e-o)}}function m(n,t,r){var e=u(n,t),o=e.map(function(n,t){return{str:n,index:t}}),i=e&&-1==e.map(isNaN).indexOf(!0),a=i?h(r):g(r);return o.sort(a),o.map(function(n){return n.index})}function p(n,t,r,o){for(var i=f(o,E)?N:T,u=m(n,r,i),c=0;t>c;++c){var s=e(n,c),d=a(n,c);s.forEach(function(n,t){n.innerHTML=d[u[t]]})}l(n,o,i)}function x(n,t){var r=t.length;t.forEach(function(t,e){t.addEventListener("click",function(){p(n,r,e,t)}),s(t,"tg-sort-header")})}var T=1,N=-1,E="tg-sort-asc",L="tg-sort-desc";return function(t){var e=n.getElementById(t),o=r(e,"tr"),i=o.length>0?r(o[0],"td"):[];0==i.length&&(i=r(o[0],"th"));for(var u=1;u<o.length;++u){var a=r(o[u],"td");if(a.length!=i.length)return}x(e,i)}}(document);document.addEventListener("DOMContentLoaded",function(n){TgTableSort("tg-wj3Vi")});document.addEventListener("DOMContentLoaded",function(n){TgTableSort("tg-wj3Vx")});</script>

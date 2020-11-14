@@ -1,0 +1,46 @@
+{
+  "spriteId": {
+    "name": "spr_south",
+    "path": "sprites/spr_south/spr_south.yy",
+  },
+  "solid": true,
+  "visible": true,
+  "spriteMaskId": {
+    "name": "spr_collision_mask",
+    "path": "sprites/spr_collision_mask/spr_collision_mask.yy",
+  },
+  "persistent": true,
+  "parentObjectId": {
+    "name": "obj_player_base",
+    "path": "objects/obj_player_base/obj_player_base.yy",
+  },
+  "physicsObject": true,
+  "physicsSensor": false,
+  "physicsShape": 0,
+  "physicsGroup": 0,
+  "physicsDensity": 0.5,
+  "physicsRestitution": 0.1,
+  "physicsLinearDamping": 0.1,
+  "physicsAngularDamping": 0.1,
+  "physicsFriction": 0.2,
+  "physicsStartAwake": true,
+  "physicsKinematic": false,
+  "physicsShapePoints": [
+    {"x":350.0,"y":512.0,},
+    {"x":350.0,"y":512.0,},
+  ],
+  "eventList": [
+    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"obj_player_basic","path":"objects/obj_player_basic/obj_player_basic.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"parent":{"name":"obj_player_basic","path":"objects/obj_player_basic/obj_player_basic.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+  ],
+  "properties": [],
+  "overriddenProperties": [],
+  "parent": {
+    "name": "Objects",
+    "path": "folders/Objects.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "obj_player_basic",
+  "tags": [],
+  "resourceType": "GMObject",
+}
